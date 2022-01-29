@@ -76,11 +76,17 @@ main li img{
 
 main li{
     float: left;
-    margin-right: 30px;
+    margin-right: 20px;
+    border: 2px solid thistle;
+    border-radius: 5px;
 }
 
 main li:last-child{
     margin-right: 0px;
+}
+
+main li:hover{
+    border: 2px solid tomato;
 }
 
 p{
@@ -92,4 +98,17 @@ p{
 footer{
     background-color: thistle;
     text-align: center;
+}
+
+footer li a{
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer li a:hover{
+    color: purple;
+    text-decoration: wavy;
 }
