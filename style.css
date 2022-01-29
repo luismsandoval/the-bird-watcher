@@ -78,6 +78,7 @@ main li img{
 main li{
     float: left;
     margin-right: 20px;
+    margin-bottom: 30px;
     border: 2px solid thistle;
     border-radius: 5px;
 }
@@ -112,4 +113,9 @@ footer li a{
 footer li a:hover{
     color: purple;
     text-decoration: wavy;
+}
+
+h4{
+    margin-left: 20px;
+    margin-right: 20px;
 }
