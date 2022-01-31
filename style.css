@@ -2,7 +2,7 @@ body{
     background-color:whitesmoke;
     margin: 0;
     padding: 0;
-    font-family: comic sans ms;
+    font: 75% georgia, sans-serif;
 }
 
 ul{
@@ -132,5 +132,5 @@ footer li a:hover{
 }
 
 h4{
-    clear:both;
+    clear: both;
 }
