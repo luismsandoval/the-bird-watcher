@@ -134,4 +134,7 @@ footer li a:hover{
 
 h4{
     clear: both;
+    background: rgb(89, 52, 89);
+    color: whitesmoke;
+    text-align: center;
 }
