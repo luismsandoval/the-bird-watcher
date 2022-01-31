@@ -56,15 +56,15 @@ nav li{
 }
 
 nav li a{
-    color: red;
-    text-decoration: none;
+    color: whitesmoke;
+    text-decoration: wavy;
     font-size:20px;
     font-weight: bold;
     cursor: pointer;
 }
 
 nav li a:hover{
-    color: purple;
+    color: rgb(111, 140, 95);
     text-decoration: wavy;
 }
 
