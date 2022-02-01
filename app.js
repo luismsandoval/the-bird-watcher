@@ -1,26 +1,34 @@
 'use strict'
 
-let name = prompt('What is your name?');
-let time = prompt('What time is it? 0-24');
-let bird = prompt('What is your favorite kind of bird?');
-let message;
-
-if(time <= 11){
-    message = 'Good morning!';
-} else if(time <= 18){
-    message = 'Good afternoon!';
-} else if(time <= 24){
-    message = 'Good evening!';
-} else {
-    message = 'The limit does not exist!'
+function yourName(){
+    let name = prompt('What is your name?');
+    return name;
 }
 
-document.write('Hi, ' + name + '! ' + message + ' ' + bird + ' is my favorite type of bird too!');
+function yourTime(){
+    let time = prompt('What time is it? 0-24');
+    let message;
+    
+    if(time <= 11){
+        message = 'Good morning!';
+    }   else if(time <= 18){
+        message = 'Good afternoon!';
+    }   else if(time <= 24){
+        message = 'Good evening!';
+    }   else {
+        message = 'The limit does not exist!'
+    }   return message;
+}
 
-var id = null;
+function favoriteBird(){
+    let bird = prompt('What is your favorite kind of bird? ');
+    return bird;
+}
+
 function myMove() {
-    var elem = document.getElementById("myAnimation");
-    var pos = 0;
+    let id = null;
+    let elem = document.getElementById("myAnimation");
+    let pos = 0;
     clearInterval(id);
     id = setInterval(frame, 10);
     function frame() {
