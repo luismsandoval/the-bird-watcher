@@ -1,26 +1,26 @@
 'use strict'
 
-function yourName(){
+function yourName() {
     let name = prompt('What is your name?');
     return name;
 }
 
-function yourTime(){
+function yourTime() {
     let time = prompt('What time is it? 0-24');
     let message;
-    
-    if(time <= 11){
+
+    if (time <= 11) {
         message = 'Good morning!';
-    }   else if(time <= 18){
+    } else if (time <= 18) {
         message = 'Good afternoon!';
-    }   else if(time <= 24){
+    } else if (time <= 24) {
         message = 'Good evening!';
-    }   else {
+    } else {
         message = 'The limit does not exist!'
-    }   return message;
+    } return message;
 }
 
-function favoriteBird(){
+function favoriteBird() {
     let bird = prompt('What is your favorite kind of bird? ');
     return bird;
 }
@@ -41,3 +41,28 @@ function myMove() {
         }
     }
 }
+
+function guessANumber() {
+    let answer;
+
+    do {
+        answer = prompt('Guess my favorite bird!');
+        if (answer != 'owl') {
+            alert('try again! Hint: owl');
+        } else {
+            alert('you are correct!');
+        }
+    } while (answer != 'owl')
+}
+
+function displayPicture() {
+
+    let output = '';
+    let rating = prompt('How many flocks would you like to see? 1-3');
+    for (let i = 0; i < rating; i++) {
+        output = output + "<img class='bird' src='bird.png'/>"
+    }
+    return document.write(output);
+}
+
+guessANumber();
